@@ -2,7 +2,7 @@ import type { Photo } from '~/types/photo'
 
 export const usePhotos = () => {
   const { $supabase } = useNuxtApp()
-  const BUCKET_NAME = 'photos'
+  const BUCKET_NAME = 'Photos'
 
   // Load all photos from bucket
   const loadPhotos = async (): Promise<Photo[]> => {
