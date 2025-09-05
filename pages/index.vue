@@ -74,7 +74,9 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted, ref } from 'vue'
 import type { Photo } from '~/types/photo'
+import { usePhotos } from '../composables/usePhotos'
 
 const { loadPhotos, uploadPhoto, deletePhoto } = usePhotos()
 
